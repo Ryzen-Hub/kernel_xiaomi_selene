@@ -648,7 +648,7 @@ static int cpufreq_parse_governor(char *str_governor, unsigned int *policy,
 			if (ret == 0)
 				t = find_governor(str_governor);
 			else
-				t = find_governor("schedutil");
+				t = find_governor("performance");
 		}
 
 		if (t != NULL) {
